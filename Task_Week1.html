@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>CV - Ihsan Budi Raharjo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #e0f7e9;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+    .dark-mode {
+      background: #1e1e1e;
+      color: #ddd;
+    }
+    .dark-mode section {
+      background: #2c2c2c;
+      color: #ddd;
+    }
+    .toggle-btn {
+      background: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    /* Foto Profil */
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .profile-container img {
+      width: 180px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .profile-text {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ihsan Budi Raharjo</h1>
+    <p>Fullstack | Front End | Back End</p>
+    <button class="toggle-btn" onclick="toggleMode()">🌙 Dark Mode</button>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <a href="#keahlian">Keahlian</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section id="profil">
+      <h2>Profil</h2>
+      <div class="profile-container">
+        <img src="https://cdnb.uns.ac.id/simpeg/foto/2022/11/3036-2qcvY_ekBQT59viIzrBahfvVcpoJmXXT.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=sim-peg%2F20250829%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250829T144329Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=5e6fdd1777c1bc5d7887e76001a452e12ff48df1b116f9d700563b0bf00d589c" alt="Foto Profil">
+        <div class="profile-text">
+          <p>Saya adalah seorang Web Developer dan Engineer yang berpengalaman dalam membuat website modern, responsif, serta memiliki pengalaman di bidang teknis lapangan. Memiliki kemampuan dalam HTML, CSS, JavaScript, serta pengembangan sistem digital.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>S1 - Teknik Informatika Universitas Duta Bangsa (2016 - 2018)</li>
+        <li>D3 - Teknik Komputer Universitas Sebelas Maret (2007 - 2010)</li>
+        <li>SMA Negeri 1 Boyolali (2004 - 2007)</li>
+      </ul>
+    </section>
+
+    <section id="pengalaman">
+      <h2>Pengalaman</h2>
+      <ul>
+        <li>Pengembang E-Learning (Moodle) (2011 - 2017)</li>
+        <li>Admin SISTER PT (2017 - sekarang)</li>
+      </ul>
+    </section>
+
+    <section id="keahlian">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Project Management</span>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Email: ihsanraharjo89@gmail.com</p>
+      <p>Telepon: +62 856-290-3398</p>
+      <p>https://www.instagram.com/ihsan_budi_raharjo/</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Ihsan Budi Raharjo</p>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
